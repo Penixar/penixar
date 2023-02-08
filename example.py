@@ -16,7 +16,7 @@ hide_st_style = """
    """
 
 # extracting data from excel sheet
-df = pd.read_csv('C:/Users/user/PycharmProjects/onlinemarket/all_data_2.csv' )
+df = pd.read_csv('./all_data_2.csv' )
 
 
 #clean up data
@@ -183,8 +183,6 @@ chart3 = pd.DataFrame(quantities, products)
 
 # prices of each product
 prices = df.groupby('Product').mean()['Price Each']
-st.write(prices)
-
 
 
 with st.container():
